@@ -1,0 +1,53 @@
+body{
+
+	background-image: url('images/fond.jpg');
+    font-family: 'Source';
+}
+
+
+@font-face {
+	font-family:'Source' ;
+	src: url('font/SourceSansPro-Regular.otf');
+}
+
+p
+{
+	color: rgb(29, 9, 43);
+	font-size: 0.9rem;
+	
+}	
+
+ul
+
+{
+    list-style-type: none ; 
+    display: flex;
+}
+
+li
+{
+    margin: 15px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    background: url('images/separateur.png') repeat-x;
+    align-items: flex-end;
+    background-position: 0px 70px;
+    
+}
+
+#Titre
+{
+    flex-direction: column;
+    display: flex;
+
+}
+
+header h1 
+
+{
+    font-size: 2.5em;
+}
