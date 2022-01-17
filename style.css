@@ -11,32 +11,6 @@ body{
 }
 
 
-
-}
-
-
-header
-{
-    display: flex;
-    justify-content: space-between;
-    background: url('images/separateur.png') repeat-x;
-    align-items: flex-end;
-    background-position: 0px 70px;
-    
-}
-
-
-ul
-{
-    list-style-type: none; 
-    display: flex;
-}
-
-li
-{
-    margin: 15px;
-}	
-
 #Titre
 {
     flex-direction: column;
@@ -56,7 +30,6 @@ h1
 {
 	text-align: right;
 	color: rgb(66, 52, 52);
-
 }
 h2
 {
@@ -69,11 +42,10 @@ h3
 }
 
 
-header h1 
-{
-		font-size: 2.5em;
-}
+body{
 
+	background-image: url('images/fond.jpg');
+}
 
 
 .experience, .formation , .competence , .centre , .haut
