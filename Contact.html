@@ -11,41 +11,56 @@
     <header>
         <div id="Titre">
             <h1>Usaki Jess</h1>
-            <h2>Ma vie</h2>
+            <h2>Me contacter</h2>
         </div>
     
         <nav>
             <ul>
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./CV.html">CV</a></li>
-                <li><a href="./PorteFolio.html">Porte Folio</a></li>
-				<li><a href="./Contact.html">Contact</a></li>
-				<li><a href="./JeSaisPas.html">JeSaisPas</a></li>
+                <li><a class="surlignement" href="./index.html">Accueil</a></li>
+                <li><a class="surlignement" href="./CV.html">CV</a></li>
+                <li><a class="surlignement" href="./PorteFolio.html">Porte Folio</a></li>
+                <li><a class="surlignement"href="./Contact.html">Contact</a></li>
+                <li><a class="surlignement"href="./JeSaisPas.html">Mes Passions</a></li>
             </ul>
         </nav>
 
     </header>
 
-<section>
-    <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates labore vel quasi non laboriosam praesentium maiores id dolore consectetur reiciendis distinctio aliquam,
-             maxime consequatur molestiae eveniet fugit eius! Illum est, quia, debitis deleniti atque repellendus, minima eligendi rem totam voluptate voluptates praesentium sit harum? 
-             Dolorem optio ad obcaecati recusandae eos</p>
+    <section>
+        <article>
+            <form action="/contact" method="post">
+                <label for="mail">Votre adresse mail
+                    <input type="email">
+                </label>   
+            
+                <label for="Sujet">Sujet
+                    <input type="text">
+                </label> 
 
-    </article>
+                <label for="msg">Message :</label>
+                <textarea id="msg" name="user_message"></textarea>
 
-    <aside>
+                <button type="submit" >Envoyer</button>
+            </form>    
+        </article>
+
+        <aside>
+
+            <div class="coordonnee">    
+                <p>Usakijess@gmail.com</br>
+                    +337XXXXXXXX</br>
+					<a href="https://www.linkedin.com/in/jessim-dridi-89518520b/">Linkdin</a></br> 
+                </p>
+                   
+           
+		        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.2614872554664!2d4.993682915968833!3d45.765949579105694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c705fa958e7d%3A0xfec971a79e07fdf1!2s6%20Rue%20Gambetta%2C%2069330%20Meyzieu!5e0!3m2!1sfr!2sfr!4v1642598261928!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div> 
+	    </aside>
 	
-		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, iusto!</p>
-	
-	</aside>
-	
-</section>
+    </section>
     
-<footer>
-
- <!-- A voir ce qu'on en fait -->
-
+    <footer>
+        <p>DRIDI Jessim 2022®</p>
     </footer>
 </body>
 </html>

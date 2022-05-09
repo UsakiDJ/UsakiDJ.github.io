@@ -1,7 +1,15 @@
+html
+{
+    height: 100%;
+}
+
 body{
 
 	background-image: url('images/fond.jpg');
     font-family: 'Source';
+    color: black;
+    min-height: 100%;
+    margin: 0;
 }
 
 
@@ -16,17 +24,31 @@ p
 	font-size: 0.9rem;
 	
 }	
-
-ul
+/*Partie haute du site*/
+header ul
 
 {
     list-style-type: none ; 
     display: flex;
+    font-size : 1.4rem;
 }
 
-li
+
+
+header li
 {
     margin: 15px;
+}
+header a:hover
+{
+    background-color: rgba(69, 83, 207, 0.664);
+    color: white;
+    
+}
+
+.surlignement
+{
+    text-decoration: none;
 }
 
 header
@@ -36,6 +58,8 @@ header
     background: url('images/separateur.png') repeat-x;
     align-items: flex-end;
     background-position: 0px 70px;
+    width: 100%;
+
     
 }
 
@@ -52,14 +76,217 @@ header h1
     font-size: 2.5em;
 }
 
-
-
-.experience, .formation , .competence , .centre , .haut
+.reduction
 {
-	padding: 10px;
-	margin: 10px auto;
-	border: 2px solid black ;
-	background-color: rgba(119, 148, 226, 0.507);
-	width: 40%;
+    object-fit: contain;
+    width : auto;
+    height: auto;
+}
 
+/* v CSS pour CV v */
+
+.experience, .formation , .competence , .centre
+{
+	padding: 20px;
+	background-color: rgba(119, 148, 226, 0.507);
+	width: 150%;
+    overflow: auto;
+    height: 100%;
+    
+}
+
+
+.conteneur
+{
+    flex-direction: row;
+    display: flex;
+    flex: content;
+    
+}
+
+
+.conteneur1
+{
+    flex-direction: row;
+    display: flex;
+    width: 68%;
+}
+
+.conteneur2
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+}
+
+.bigconteneur
+{
+    display: flex;
+    width: 100%
+}
+
+.haut
+{
+    width: 20%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+}
+
+.haut p
+{
+    color: white;
+    margin: 70px;
+}
+
+.centre
+{
+    height: auto;
+}
+
+.formation
+
+{
+    border-left: 3px solid rgb(69, 90, 211);
+    border-right: 2px dashed black ;
+}
+
+.experience
+{
+
+    border-right: 2px dashed black;
+}
+
+.centre
+
+{
+    border-top: 2px dashed black;
+}
+
+
+
+/* Pour page contact/Index/PorteFolio et JeSaisPas*/
+
+section
+{
+    display: flex;
+    height: 90%;
+
+}
+
+article
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    justify-content: space-between;
+    background-color: rgba(100, 148, 237, 0.418);
+    padding: auto;
+    align-items: center;
+    padding-bottom: 75px;
+    padding-top: 75px;
+}
+
+aside
+
+{
+    text-align: center;
+    min-height: 100%;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin: 0 auto;
+    padding-top: 30px;
+
+}
+
+
+footer
+
+{
+  
+    border-top: 3px solid black;    
+    background-color: rgba(83, 81, 81, 0.705);
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    position: absolute;
+}
+
+footer ul 
+
+{
+    display: flex;
+    flex-direction : row;
+    justify-content: space-between;
+}
+
+footer li
+
+{
+    margin: 15px;
+}
+
+footer p
+
+{
+    color: white;
+}
+
+input
+{
+    width: 200px;
+}
+
+button
+{
+    width: 100px;
+    height: 25px;
+
+}
+
+textarea
+{
+    width: 500px;
+    height: 200px;
+}
+
+
+
+aside p, .coordonnee p, .coordonnee a /*Changement de couleur et taille et placement d'un espacement*/
+{
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 50px;
+
+}
+
+
+iframe
+{
+    padding: auto 150px;
+}
+
+label
+{
+    display: inline-block;
+    margin: 15px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+a:visited /*Changement de couleur pour les liens visiter */
+{
+    color: white;
 }
